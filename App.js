@@ -1,20 +1,37 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,Image,SafeAreaView} from 'react-native';
+import 'react-native-gesture-handler';
+import MyStack from './routes/Mystack';
+import { PaperProvider } from 'react-native-paper';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    
+      <PaperProvider>
+        <NavigationContainer>
+          {/* <SafeAreaView/> */}
+        <MyStack/>
+        <StatusBar style="auto" />
+        </NavigationContainer>
+      </PaperProvider>
+
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#1F2123',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  logoImage: {
+    width: 230,
+    height: 150,
+    marginTop: 70,
+    borderWidth: 4,
+    borderRadius: 15,
+    
   },
 });
