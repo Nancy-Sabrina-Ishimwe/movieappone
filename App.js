@@ -4,6 +4,7 @@ import { StyleSheet, Text, View,Image,SafeAreaView} from 'react-native';
 import 'react-native-gesture-handler';
 import MyStack from './routes/Mystack';
 import { PaperProvider } from 'react-native-paper';
+import LoginScreen from './screens/LoginScreen';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <NavigationContainer>
           {/* <SafeAreaView/> */}
         <MyStack/>
+        {/* <LoginScreen/> */}
         <StatusBar style="auto" />
         </NavigationContainer>
       </PaperProvider>
