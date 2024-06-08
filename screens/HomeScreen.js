@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     flex: 1,
     position:'relative',
     
-  
   },
 
 
@@ -78,10 +77,6 @@ const styles = StyleSheet.create({
 
   btnStyle: {
     borderRadius: 6,
-    
-   
-
-     
   },
 
 });

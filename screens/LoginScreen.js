@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import {
-  View,
-  Pressable,
-  StyleSheet,
-  Text,
-  TextInput,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import {View,Pressable,StyleSheet,Text,TextInput,Image,TouchableOpacity,ImageBackground} from "react-native";
 import { Color } from "../colors/Color";
 import { Button } from "react-native-paper";
 
@@ -30,8 +22,9 @@ const LoginScreen = ({ navigation }) => {
   };
 
   return (
+  
     <View style={{ alignItems: "center", justifyContent: "center" }}>
-      <Image source={require("../assets/muvi.png")} style={styles.logoImage} />
+      <Image source={require("../assets/M.png")} style={styles.logoImage} />
       <View>
         <Text>Please login to enjoy more benefits and we won't let you go</Text>
       </View>

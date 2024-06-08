@@ -1,19 +1,29 @@
-import { View, Text,Image } from 'react-native'
+import { View,Image,StyleSheet} from 'react-native'
 import React from 'react'
-import Header from '../components/Header'
-import Flatbutton from '../shared/button'
+
 
 export default function WelcomeScreen() {
   return (
-    <View>
-        <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-      <Image source={require('./assets/muvi.png')} />
-      </View>
-      <Text>Welcome to Muvi</Text>
-      <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Free movie streaming all your needs everytime and everywhere</Text>
-      </View>
-      
+    <View style={styles.container}>
+      <View style={styles.imageStyle}> 
+      <Image source={require('../assets/mtwo.png')} />
+      </View> 
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    position:'absolute',
+    backgroundColor:'#1F2123',
+  },
+  imageStyle: {
+    borderRadius:'50%',
+    alignItems: 'center',
+    
+    flex: 3,
+    
+  },
+
+});
